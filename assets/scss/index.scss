@@ -1,0 +1,10 @@
+@use "/assets/scss/reset.scss";
+@use "/assets/scss/fonts.scss";
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  --color-grey: #292929;
+  --color-white: #ffffff;
+  --color-black: #191919;
+}
