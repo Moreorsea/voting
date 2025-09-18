@@ -1,1 +1,6 @@
-<template>main 1</template>
+<template>
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+</template>

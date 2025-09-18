@@ -19,4 +19,10 @@ export default defineNuxtConfig({
       }
     ]
   },
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'in-out'
+    }
+  }
 })
