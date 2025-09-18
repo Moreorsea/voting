@@ -23,6 +23,11 @@
   justify-content: flex-end;
   gap: 20px;
   border-right: 1px solid var(--color-light-grey);
+  position: fixed;
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  bottom: 0;
 
   &__home {
     margin-bottom: auto;
