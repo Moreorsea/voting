@@ -1,13 +1,14 @@
 <template>
   <div>
     <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+    <ToastList />
   </div>
 </template>
 
 <script lang="ts" setup>
-import "@/assets/scss/index.scss"
+import "@/assets/scss/index.scss";
 </script>
 
 <style lang="scss" scoped>

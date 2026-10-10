@@ -1,21 +1,38 @@
 <template>
   <div class="card__footer-action card__footer-like">
-        <span>{{ post?.likes }}</span>
-        <button>
-          <Icon name="icon:like" size="18px" />
-        </button>
-      </div>
-      <div class="card__footer-action card__footer-dislike">
-        <span>{{ post?.dislikes }}</span>
-        <button>
-          <Icon name="icon:dislike" size="18px" />
-        </button>
-      </div>
+    <span>{{ post?.likes }}</span>
+    <button
+      type="button"
+      @click="$emit('like')"
+    >
+      <Icon
+        name="icon:like"
+        size="18px"
+      />
+    </button>
+  </div>
+  <div class="card__footer-action card__footer-dislike">
+    <span>{{ post?.dislikes }}</span>
+    <button
+      type="button"
+      @click="$emit('dislike')"
+    >
+      <Icon
+        name="icon:dislike"
+        size="18px"
+      />
+    </button>
+  </div>
 </template>
 
 <script lang="ts" setup>
 defineProps<{
-  post: any
+  post: any;
+}>();
+
+defineEmits<{
+  like: [];
+  dislike: [];
 }>();
 </script>
 

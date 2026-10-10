@@ -7,15 +7,15 @@
 </template>
 
 <script lang="ts" setup>
-const { error } = defineProps<{ error: NuxtError }>();
+const { error } = defineProps<{ error: NuxtError; }>();
 
 const statusMessage = computed(() => {
   if(error?.statusCode === 404) {
-    return 'Страница не найдена, вернитесь на главную страницу'
+    return 'Страница не найдена, вернитесь на главную страницу';
   }
 
-  return 'Что-то пошло не так, попробуйте перезагрузить страницу'
-})
+  return 'Что-то пошло не так, попробуйте перезагрузить страницу';
+});
 </script>
 
 <style lang="scss" scoped>

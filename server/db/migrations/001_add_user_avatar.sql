@@ -1,0 +1,3 @@
+-- Avatar field for users
+ALTER TABLE users
+  ADD COLUMN avatar VARCHAR(255) NULL DEFAULT NULL AFTER email;

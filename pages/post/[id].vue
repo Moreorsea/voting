@@ -16,10 +16,10 @@ const { apiUrl } = useRuntimeConfig().public;
 
 const { data: post } = useAsyncData(`post-${route.params?.id}`,
 async () => {
-  const result = await $fetch(`${apiUrl}/posts/${route.params?.id}`);
+  const result = await $fetch(`${apiUrl}posts/${route.params?.id}`);
 
   return result;
 }, {
   watch: [route.params.id]
-})
+});
 </script>

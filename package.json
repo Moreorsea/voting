@@ -8,8 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "eslint . --fix",
+    "format:check": "eslint ."
   },
   "dependencies": {
     "@nuxt/eslint": "^1.5.2",
@@ -17,13 +19,22 @@
     "@nuxt/icon": "^1.13.0",
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.9",
+    "@pinia/nuxt": "^1.0.2",
     "@unhead/vue": "^2.0.12",
+    "bcryptjs": "^3.0.3",
     "eslint": "^9.31.0",
+    "jose": "^6.2.12",
+    "mysql2": "^3.24.4",
     "nuxt": "^3.17.6",
+    "pinia": "^4.0.3",
+    "pinia-plugin-persistedstate": "^4.7.1",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/bcryptjs": "^2.4.6",
     "sass-embedded": "^1.91.0"
   }
 }
